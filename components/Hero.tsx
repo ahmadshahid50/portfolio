@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl">
         <div className="max-w-4xl">
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.3em] text-emerald-300/90">
-            Frontend engineer / product-focused UI systems
+            Frontend Developer / product-focused UI systems
           </p>
           <h1 className="max-w-4xl text-3xl font-semibold leading-[0.96] tracking-[-0.07em] text-zinc-50 sm:text-6xl lg:text-[4.1rem]">
             I build the frontend systems behind modern digital products.
