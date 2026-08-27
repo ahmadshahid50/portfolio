@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #f4f4f5;
+  --muted: #a1a1aa;
+  --panel: #0b0d0f;
+  --panel-strong: #101214;
+  --border: rgba(255, 255, 255, 0.09);
+  --accent: #5eead4;
+  --accent-soft: rgba(94, 234, 212, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(19, 30, 26, 0.7), transparent 35%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.25);
+  color: #f8fafc;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(94, 234, 212, 0.9);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
