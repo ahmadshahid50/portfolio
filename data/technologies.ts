@@ -5,15 +5,15 @@ export type TechnologyGroup = {
 
 export const technologyGroups: TechnologyGroup[] = [
   {
-    title: "Frontend",
-    items: ["React", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap"],
+    title: "Frontend Core",
+    items: ["React", "Next.js", "JavaScript", "TypeScript", "Vite"],
   },
   {
-    title: "Backend / APIs",
-    items: ["Node.js", "Express", "REST APIs", "MongoDB"],
+    title: "UI / Styling",
+    items: ["CSS3", "Tailwind CSS", "Bootstrap", "SASS / SCSS", "CSS Modules"],
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "Vite", "npm / pnpm", "VS Code"],
+    items: ["Git", "GitHub",  "npm / pnpm", "VS Code"],
   },
 ];
