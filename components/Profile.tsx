@@ -2,11 +2,12 @@ import { ArrowRight, Briefcase, MapPin, Sparkles } from "lucide-react";
 
 export default function Profile() {
   const details = [
+      { label: "Name", value: "Ahmad Shahid" },
     { label: "Role", value: "Frontend Developer" },
     { label: "Location", value: "Lahore, Pakistan" },
-    { label: "Focus", value: "Frontend Engineering" },
+    { label: "Focus", value: "Frontend Developer" },
     { label: "Primary stack", value: "React / Next.js" },
-    { label: "Experience", value: "Product-focused frontend work" },
+    // { label: "Experience", value: "Product-focused frontend work" },
     { label: "Availability", value: "Open to opportunities" },
   ];
 
@@ -60,10 +61,10 @@ export default function Profile() {
               ))}
             </dl>
 
-            <div className="mt-5 flex items-center gap-2 rounded border border-emerald-300/20 bg-emerald-300/5 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-emerald-200">
+            {/* <div className="mt-5 flex items-center gap-2 rounded border border-emerald-300/20 bg-emerald-300/5 px-3 py-2 text-[10px] uppercase tracking-[0.2em] text-emerald-200">
               <MapPin size={12} />
               Available for select work
-            </div>
+            </div> */}
           </aside>
         </div>
 
